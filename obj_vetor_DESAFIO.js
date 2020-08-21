@@ -496,3 +496,110 @@ const usuariosDS = [
 
         return soma;
      } 
+
+
+     const aTurmaA = [
+
+        {
+            nome: 'Carlos',
+            nota: 5
+        },
+    
+        {
+            nome: 'Monique',
+            nota: 3
+        },
+    
+        {
+            nome: 'Maria',
+            nota: 7
+        },
+    
+        {
+            nome: 'Jane',
+            nota: 4
+        },
+    
+        {
+            nome: 'Fabricio',
+            nota: 2
+        }
+    
+    ]
+    
+    
+    const aTurmaB = [
+    
+        {
+            nome: 'Thyco',
+            nota: 6
+        },
+    
+        {
+            nome: 'Snoopy',
+            nota: [ 2 , 7 ]
+        },
+    
+        {
+            nome: 'Hercules',
+            nota: 10
+        },
+    
+        {
+            nome: 'Zeus',
+            nota: 8
+        },
+    
+        {
+            nome: 'Nina',
+            nota: 11
+        }
+    
+    ]
+    
+    
+    function marcarReprovado(alunos){
+
+        let media = 0;
+
+        for(let aluno of alunos){
+    
+            aluno.reprovado = false;
+                        
+            if(typeof aluno.nota === "object"){
+
+                for(let c = 0 ; c < aluno.nota.length ; c ++ ){
+
+                    let nota = aluno.nota[c]
+                    media = media + nota
+                }
+
+                    const mediaFinal = media / aluno.nota.length
+
+                    
+
+                    if(mediaFinal < 5){
+
+                        aluno.reprovado = true;
+                    }      
+        
+            }else{
+
+                if(aluno.nota < 5){
+
+                    aluno.reprovado = true;
+                }
+            }
+
+        }
+
+        console.table(alunos)      
+    }
+
+        
+    
+    
+
+    marcarReprovado(aTurmaB)
+    
+
