@@ -1,0 +1,165 @@
+@import "https://fonts.googleapis.com/css2?family=Anton&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Roboto&display=swap";
+
+
+    :root{
+
+        --color-background: rgb(95,2,56);
+        --color-text:white;
+        --color-tagline: rgb(56,1,33);
+        --color-borders: white;
+    
+
+    }
+
+
+    * { 
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+        body {
+
+            background:var(--color-background);
+            color: var(--color-text);
+                    
+
+        }
+
+        .links {
+            
+            background-color: var(--color-tagline);
+            margin: 30px 0px 30px;
+            border: 1px solid var(--color-borders);
+            border-left: none;
+            border-right: none;
+            padding: 2px;
+            word-spacing: 8px;
+            font-family: 'Anton', sans-serif;
+            text-align: center;
+            
+        }
+
+        header div {
+
+            text-align: center;
+            font-family: 'Anton';
+            
+        }
+
+        .links a {
+
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 30px;
+            margin: 0 , 16px;
+          
+            
+        }
+
+        .links a:hover {
+
+            color: var(--color-background);
+            transition: color 200ms;
+
+        }
+
+        #wrapper {
+
+            margin: 0px 0px 30px;
+            
+        }
+     
+        #wrapper img {
+
+           
+            width: 250px;
+            height: 250px;  
+            object-fit: cover;  
+            border-radius: 50%;
+            border: 3px solid var(--color-borders);
+        }
+
+        #textPhoto {
+
+            font-family: 'Bebas Neue',sans-serif;
+            letter-spacing: 1.5px;
+            text-align: center;
+            padding:20px 0px 20px;
+            margin: 0px 0px 20px;
+            border: 2px solid var(--color-borders);
+            background: var(--color-tagline);
+            border-left: none;
+            border-right: none;
+         
+        }
+
+        #textPhoto h1{
+            font-size: 50px;
+            line-height: 40px;
+        }
+
+        #textPhoto h2{
+
+            font-family: 'roboto', sans-serif;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 16px;
+            
+        }
+
+        #textPhoto p{
+
+            font-family: 'Montserrat', sans-serif;
+            padding: 4px;
+            line-height: 8px;
+            font-size: 12px;s
+        }
+
+        #Bio {
+
+            margin:0px 200px;
+        }
+
+        #Bio div {
+
+            height:100px;
+            width:100px;
+            float: left;
+            text-align: center;
+            font-family: 'Anton';
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 70px;
+            line-height: 100px;
+            margin:10px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: white;
+            color: var(--color-background);
+            
+        }
+
+        #wrapperT {
+
+            
+            line-height: 18px;
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+            text-align:justify;
+            text-indent: 30%;
+        }
+        
+        .links-footer {
+            
+            background-color: var(--color-tagline);
+            margin: 30px 0px 30px;
+            border: 1px solid var(--color-borders);
+            border-left: none;
+            border-right: none;
+            padding: 2px;
+            word-spacing: 8px;
+            
+        }
