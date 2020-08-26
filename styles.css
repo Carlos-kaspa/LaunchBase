@@ -22,7 +22,7 @@
         body {
 
             background:var(--color-background);
-            color: var(--color-text);
+            
                     
 
         }
@@ -65,21 +65,16 @@
             transition: color 200ms;
 
         }
-
-        #wrapper {
-
-            margin: 0px 0px 30px;
-            
-        }
      
         #wrapper img {
 
-           
+            margin: 0px auto 30px;
             width: 250px;
             height: 250px;  
             object-fit: cover;  
             border-radius: 50%;
             border: 3px solid var(--color-borders);
+            display: block;
         }
 
         #textPhoto {
@@ -93,6 +88,7 @@
             background: var(--color-tagline);
             border-left: none;
             border-right: none;
+            color: white;
          
         }
 
@@ -110,12 +106,12 @@
             
         }
 
-        #textPhoto p{
+        #textPhoto p {
 
             font-family: 'Montserrat', sans-serif;
             padding: 4px;
             line-height: 8px;
-            font-size: 12px;s
+            font-size: 12px;
         }
 
         #Bio {
@@ -136,7 +132,6 @@
             line-height: 100px;
             margin:10px;
             border-radius: 50%;
-            display: inline-block;
             background-color: white;
             color: var(--color-background);
             
@@ -150,6 +145,7 @@
             font-family: 'Montserrat', sans-serif;
             text-align:justify;
             text-indent: 30%;
+            color:white;
         }
         
         .links-footer {
@@ -163,3 +159,89 @@
             word-spacing: 8px;
             
         }
+
+        /*===CARDS===*/
+
+        
+        .cards_container {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+                       
+        }
+
+     
+        .video_container {
+
+            margin: 10px;
+            max-width: 400px;
+            max-height: 400px;
+
+        }
+
+
+        .card {
+
+            max-width: 400px;
+            max-height: 400px;
+            margin: 15px auto;
+            background-color: var(--color-tagline);
+            border-radius: 5%;   
+            filter: opacity(60%);   
+        }
+
+        .card:hover {
+
+            filter: opacity(100%)
+
+        }
+
+      
+        .card_img img {
+
+            border-radius: 10%;
+            margin: 0;
+            margin-right: auto;
+            margin-left:auto;
+            display: block;
+            max-width: 400px;
+
+        
+        }
+
+        .card_content {
+
+            padding: 0px 0px 5px;
+            text-align: center;
+            
+            
+        }
+
+        .card_content p1 {
+
+            font-size: 16px;
+            color: white;
+            font-family: 'Anton',sans-serif;
+
+
+        }
+
+        .card_content p2 {
+
+            font-size: 14px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 10px;
+        }
+
+        .card_info {
+
+            text-align: center;
+            font-size: 10px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 10px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
